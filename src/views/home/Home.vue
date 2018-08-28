@@ -2,22 +2,24 @@
 <template>
   <div>
     <home-header></home-header>
-    {{hello}}
+    <home-swiper></home-swiper>
+    <div>asd</div>
   </div>
 </template>
 
 <script>
-import HomeHeader from './components/Header'
+import HomeHeader from './components/HomeHeader'
+import HomeSwiper from './components/HomeSwiper'
 export default {
   name: 'Home',
   data () {
     return {
-      hello: 'haha'
     }
   },
 
   components: {
-    HomeHeader
+    HomeHeader,
+    HomeSwiper
   },
 
   computed: {},
